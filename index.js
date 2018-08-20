@@ -64,8 +64,9 @@ y = y.divide(100);
 const nn = new NN();
 
 // train 10000 times
-for (let i = 0; i < 100000; i++) {
-  if (i === 99999) {
+for (let i = 0; i < 10000; i++) {
+  console.log('training #', i);
+  if (i === 9999) {
     console.log('\nInput: \n' + X);
     console.log('\nActual Output: \n' + y);
     console.log('\nPredicted Output: \n' + nn.forward(X));
